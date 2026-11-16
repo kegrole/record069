@@ -1,0 +1,310 @@
+{
+  "description": "Deterministic six-probe fixture for five URLs; median baseline of the first three latencies.",
+  "config": {
+    "failure_threshold": 3,
+    "latency_multiplier": 3.0,
+    "baseline_size": 3
+  },
+  "probes": [
+    {
+      "url": "https://example.invalid/a",
+      "timestamp": "2026-11-16T08:00:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "d63b00f2037ffa268a813316fda554c5ae31a452d59fa1c67c403024c7f1ea2a",
+      "content": "A-ok",
+      "probe_index": 0
+    },
+    {
+      "url": "https://example.invalid/a",
+      "timestamp": "2026-11-16T08:01:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "d63b00f2037ffa268a813316fda554c5ae31a452d59fa1c67c403024c7f1ea2a",
+      "content": "A-ok",
+      "probe_index": 1
+    },
+    {
+      "url": "https://example.invalid/a",
+      "timestamp": "2026-11-16T08:02:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "d63b00f2037ffa268a813316fda554c5ae31a452d59fa1c67c403024c7f1ea2a",
+      "content": "A-ok",
+      "probe_index": 2
+    },
+    {
+      "url": "https://example.invalid/a",
+      "timestamp": "2026-11-16T08:03:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "d63b00f2037ffa268a813316fda554c5ae31a452d59fa1c67c403024c7f1ea2a",
+      "content": "A-ok",
+      "probe_index": 3
+    },
+    {
+      "url": "https://example.invalid/a",
+      "timestamp": "2026-11-16T08:04:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "d63b00f2037ffa268a813316fda554c5ae31a452d59fa1c67c403024c7f1ea2a",
+      "content": "A-ok",
+      "probe_index": 4
+    },
+    {
+      "url": "https://example.invalid/a",
+      "timestamp": "2026-11-16T08:05:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "d63b00f2037ffa268a813316fda554c5ae31a452d59fa1c67c403024c7f1ea2a",
+      "content": "A-ok",
+      "probe_index": 5
+    },
+    {
+      "url": "https://example.invalid/b",
+      "timestamp": "2026-11-16T08:06:00Z",
+      "status_code": 500,
+      "latency_ms": 50,
+      "response_length": 7,
+      "content_sha256": "261370f27204a6f920b7a5d8cd5379a0972d34519c986bd5b0dced74db0dd3c3",
+      "content": "B-error",
+      "probe_index": 0
+    },
+    {
+      "url": "https://example.invalid/b",
+      "timestamp": "2026-11-16T08:07:00Z",
+      "status_code": 500,
+      "latency_ms": 50,
+      "response_length": 7,
+      "content_sha256": "261370f27204a6f920b7a5d8cd5379a0972d34519c986bd5b0dced74db0dd3c3",
+      "content": "B-error",
+      "probe_index": 1
+    },
+    {
+      "url": "https://example.invalid/b",
+      "timestamp": "2026-11-16T08:08:00Z",
+      "status_code": 500,
+      "latency_ms": 50,
+      "response_length": 7,
+      "content_sha256": "261370f27204a6f920b7a5d8cd5379a0972d34519c986bd5b0dced74db0dd3c3",
+      "content": "B-error",
+      "probe_index": 2
+    },
+    {
+      "url": "https://example.invalid/b",
+      "timestamp": "2026-11-16T08:09:00Z",
+      "status_code": 500,
+      "latency_ms": 50,
+      "response_length": 7,
+      "content_sha256": "261370f27204a6f920b7a5d8cd5379a0972d34519c986bd5b0dced74db0dd3c3",
+      "content": "B-error",
+      "probe_index": 3
+    },
+    {
+      "url": "https://example.invalid/b",
+      "timestamp": "2026-11-16T08:10:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "b199644415d68074d06a8b653cacedf02652abd6e587ada4c2c8b07447434424",
+      "content": "B-ok",
+      "probe_index": 4
+    },
+    {
+      "url": "https://example.invalid/b",
+      "timestamp": "2026-11-16T08:11:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "b199644415d68074d06a8b653cacedf02652abd6e587ada4c2c8b07447434424",
+      "content": "B-ok",
+      "probe_index": 5
+    },
+    {
+      "url": "https://example.invalid/c",
+      "timestamp": "2026-11-16T08:12:00Z",
+      "status_code": 500,
+      "latency_ms": 50,
+      "response_length": 7,
+      "content_sha256": "32aa440b6ffa032eb29615bc26a33bef127d908d2483093708366d013b40aba3",
+      "content": "C-error",
+      "probe_index": 0
+    },
+    {
+      "url": "https://example.invalid/c",
+      "timestamp": "2026-11-16T08:13:00Z",
+      "status_code": 500,
+      "latency_ms": 50,
+      "response_length": 7,
+      "content_sha256": "32aa440b6ffa032eb29615bc26a33bef127d908d2483093708366d013b40aba3",
+      "content": "C-error",
+      "probe_index": 1
+    },
+    {
+      "url": "https://example.invalid/c",
+      "timestamp": "2026-11-16T08:14:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "36f714a317fde69268683af61bcd11247e8ee811e8d193490b90b15f2245857c",
+      "content": "C-ok",
+      "probe_index": 2
+    },
+    {
+      "url": "https://example.invalid/c",
+      "timestamp": "2026-11-16T08:15:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "36f714a317fde69268683af61bcd11247e8ee811e8d193490b90b15f2245857c",
+      "content": "C-ok",
+      "probe_index": 3
+    },
+    {
+      "url": "https://example.invalid/c",
+      "timestamp": "2026-11-16T08:16:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "36f714a317fde69268683af61bcd11247e8ee811e8d193490b90b15f2245857c",
+      "content": "C-ok",
+      "probe_index": 4
+    },
+    {
+      "url": "https://example.invalid/c",
+      "timestamp": "2026-11-16T08:17:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 4,
+      "content_sha256": "36f714a317fde69268683af61bcd11247e8ee811e8d193490b90b15f2245857c",
+      "content": "C-ok",
+      "probe_index": 5
+    },
+    {
+      "url": "https://example.invalid/d",
+      "timestamp": "2026-11-16T08:18:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 11,
+      "content_sha256": "ebc9385fb9388e302437fbed3b7ae515d60d3c8628c25111d21c2dc99982acb7",
+      "content": "D-version-1",
+      "probe_index": 0
+    },
+    {
+      "url": "https://example.invalid/d",
+      "timestamp": "2026-11-16T08:19:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 11,
+      "content_sha256": "ebc9385fb9388e302437fbed3b7ae515d60d3c8628c25111d21c2dc99982acb7",
+      "content": "D-version-1",
+      "probe_index": 1
+    },
+    {
+      "url": "https://example.invalid/d",
+      "timestamp": "2026-11-16T08:20:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 11,
+      "content_sha256": "ebc9385fb9388e302437fbed3b7ae515d60d3c8628c25111d21c2dc99982acb7",
+      "content": "D-version-1",
+      "probe_index": 2
+    },
+    {
+      "url": "https://example.invalid/d",
+      "timestamp": "2026-11-16T08:21:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 11,
+      "content_sha256": "aecfa73ddffd41812fa5615a12c2b208714dd5ccc5237986a0d5da9e324e71b8",
+      "content": "D-version-2",
+      "probe_index": 3
+    },
+    {
+      "url": "https://example.invalid/d",
+      "timestamp": "2026-11-16T08:22:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 11,
+      "content_sha256": "aecfa73ddffd41812fa5615a12c2b208714dd5ccc5237986a0d5da9e324e71b8",
+      "content": "D-version-2",
+      "probe_index": 4
+    },
+    {
+      "url": "https://example.invalid/d",
+      "timestamp": "2026-11-16T08:23:00Z",
+      "status_code": 200,
+      "latency_ms": 50,
+      "response_length": 11,
+      "content_sha256": "aecfa73ddffd41812fa5615a12c2b208714dd5ccc5237986a0d5da9e324e71b8",
+      "content": "D-version-2",
+      "probe_index": 5
+    },
+    {
+      "url": "https://example.invalid/e",
+      "timestamp": "2026-11-16T08:24:00Z",
+      "status_code": 200,
+      "latency_ms": 100,
+      "response_length": 13,
+      "content_sha256": "7e5411c7bee247667ac7cb99388edb357a8a69eb867cacd35acd0d9b9a8cd0ca",
+      "content": "E-stable-body",
+      "probe_index": 0
+    },
+    {
+      "url": "https://example.invalid/e",
+      "timestamp": "2026-11-16T08:25:00Z",
+      "status_code": 200,
+      "latency_ms": 100,
+      "response_length": 13,
+      "content_sha256": "7e5411c7bee247667ac7cb99388edb357a8a69eb867cacd35acd0d9b9a8cd0ca",
+      "content": "E-stable-body",
+      "probe_index": 1
+    },
+    {
+      "url": "https://example.invalid/e",
+      "timestamp": "2026-11-16T08:26:00Z",
+      "status_code": 200,
+      "latency_ms": 300,
+      "response_length": 13,
+      "content_sha256": "7e5411c7bee247667ac7cb99388edb357a8a69eb867cacd35acd0d9b9a8cd0ca",
+      "content": "E-stable-body",
+      "probe_index": 2
+    },
+    {
+      "url": "https://example.invalid/e",
+      "timestamp": "2026-11-16T08:27:00Z",
+      "status_code": 200,
+      "latency_ms": 400,
+      "response_length": 13,
+      "content_sha256": "7e5411c7bee247667ac7cb99388edb357a8a69eb867cacd35acd0d9b9a8cd0ca",
+      "content": "E-stable-body",
+      "probe_index": 3
+    },
+    {
+      "url": "https://example.invalid/e",
+      "timestamp": "2026-11-16T08:28:00Z",
+      "status_code": 200,
+      "latency_ms": 400,
+      "response_length": 13,
+      "content_sha256": "7e5411c7bee247667ac7cb99388edb357a8a69eb867cacd35acd0d9b9a8cd0ca",
+      "content": "E-stable-body",
+      "probe_index": 4
+    },
+    {
+      "url": "https://example.invalid/e",
+      "timestamp": "2026-11-16T08:29:00Z",
+      "status_code": 200,
+      "latency_ms": 400,
+      "response_length": 13,
+      "content_sha256": "7e5411c7bee247667ac7cb99388edb357a8a69eb867cacd35acd0d9b9a8cd0ca",
+      "content": "E-stable-body",
+      "probe_index": 5
+    }
+  ]
+}
